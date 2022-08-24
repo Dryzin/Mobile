@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  entrada : string
+  saida : string
 
   constructor() {}
+
+  submit(){
+    var ent = this.entrada
+    this.saida = ent.toString()
+
+  }
 
 }
