@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>historico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let arrayProduto of arrayProduto" lines="nome">
+    <ion-label>
+      Nome:{{arrayProduto.nome}} <br>
+      Tipo:{{arrayProduto.tipo}}
+    </ion-label>
+  </ion-item>
+</ion-content>
+<ion-button shape="round" size="full" fill="outline" color="medium" routerLink="/home"> Voltar </ion-button>
