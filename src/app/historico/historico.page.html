@@ -7,9 +7,11 @@
 <ion-content>
   <ion-item *ngFor="let arrayProduto of arrayProduto" lines="nome">
     <ion-label>
-      Nome:{{arrayProduto.nome}} <br>
-      Tipo:{{arrayProduto.tipo}}
+      Nome:{{arrayProduto.nome}}<br>
+      Valor:{{arrayProduto.valor}}<br>
+      Quantidade:{{arrayProduto.quant}}
     </ion-label>
   </ion-item>
+
 </ion-content>
 <ion-button shape="round" size="full" fill="outline" color="medium" routerLink="/home"> Voltar </ion-button>
