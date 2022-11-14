@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content>
+  <ion-progress-bar [value]="progress" ></ion-progress-bar>
 
   <form [formGroup]="produtoForm" (submit)="enviar()" >
 
@@ -25,8 +26,6 @@
     </ion-item>
 
     <ion-button shape="round" size="full" fill="outline" color="medium" type="submit">Gravar</ion-button>
-
-    <ion-progress-bar [value]="progress" ></ion-progress-bar>
     
   </form>
 

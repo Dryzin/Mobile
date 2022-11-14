@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'historico',
     loadChildren: () => import('./historico/historico.module').then( m => m.HistoricoPageModule)
   },
+  {
+    path: 'baixas',
+    loadChildren: () => import('./baixas/baixas.module').then( m => m.BaixasPageModule)
+  },
 
 ];
 

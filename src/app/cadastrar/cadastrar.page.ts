@@ -27,7 +27,7 @@ export class CadastrarPage implements OnInit {
 
     this.produtosService.listarTodos().then(arrayProduto => {this.arrayProduto = arrayProduto})
 
-    this.produto = {id: Guid.createEmpty(), nome:"", valor: "", quant: ""}
+    this.produto = {id: Guid.createEmpty(), nome:"", valor: 0, quant: ""}
 
     this.produtoForm = this.formBuilder.group
     ({

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Estoque</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Função no Estoque: </ion-label>
+      <ion-select placeholder="Opções" [(ngModel)]="tipo" >
+        <ion-select-option value="entrada">Entrada</ion-select-option>
+        <ion-select-option value="saida">Saída</ion-select-option>
+        <ion-select-option value="delet">Deletar</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Produtos no Estoque: </ion-label>
+      <ion-select placeholder="Selecione um produto" [(ngModel)]="produto">
+        <ion-select-option *ngFor="let arrayProduto of arrayProduto" value="{{arrayProduto.id.value}}" >{{arrayProduto.nome}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+
+  <ion-item>
+    <ion-label position="floating"> Informe a Quantidade: </ion-label>
+    <ion-input [(ngModel)]="quantidade" placeholder="00"></ion-input>
+  </ion-item>
+
+  <ion-button shape="round" size="full" fill="outline" color="medium" (click)="atualizar()" >Atualizar</ion-button>
+
+</ion-content>
+
+<ion-button shape="round" size="full" fill="outline" color="medium" routerLink="/home"> Voltar </ion-button>
+

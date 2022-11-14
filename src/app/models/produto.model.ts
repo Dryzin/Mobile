@@ -4,6 +4,6 @@ export interface Produto {
 
     id: Guid;
     nome: string;
-    valor: string;
+    valor: number;
     quant: string;
 }
